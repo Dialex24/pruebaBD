@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package controladores;
 
 import java.awt.event.ActionEvent;
@@ -10,10 +6,7 @@ import java.awt.event.ActionListener;
 import modelos.*;
 import vistas.*;
 
-/**
- *
- * @author umg
- */
+
 public class ConexionController implements ActionListener {
     frmLogin VistaLogin;
     frmPrincipal VistaPrincipal;
@@ -26,10 +19,18 @@ public class ConexionController implements ActionListener {
         
         //levantar formulario
         this.VistaPrincipal.setVisible(true);
+       
+        
+        //levantar vista principal
+        this.VistaPrincipal.setVisible(true);
         
         //poner a la escucha el boton principal
         
         this.VistaLogin.btnAceptar.addActionListener(this);
+        this.VistaPrincipal.btnIngresar.addActionListener(this);
+        
+        
+        
         
         //levantar login
         this.VistaLogin.setResizable(true);
