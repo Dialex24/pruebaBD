@@ -65,7 +65,8 @@ public class ConexionController implements ActionListener {
         {
           //mandar a guardar el registro
             this.ModeloPersona.GuardarPersona(this.VistaPersona.txtApellido.getText(), 
-                    this.VistaPersona.txtNombre.getText(), this.VistaPersona.txtTelefono.getText());
+                    this.VistaPersona.txtNombre.getText(),
+                    Integer.parseInt(this.VistaPersona.txtTelefono.getText()));
         }
         }
     }

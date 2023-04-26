@@ -46,14 +46,14 @@ public class PersonaModel {
     
     
     
-    public void GuardarPersona()
+    public void GuardarPersona(String aoellidos, String nombre, int telefono)
     {
         try
         {
           Conexion nuevaConexion = new Conexion();
           this.miConexion = nuevaConexion.Conectar(nombre, nombre);
           Statement sentencia = miConexion.createStatement();
-          sentencia.execute("insert into Persona values('"+this.getApellidos()+"', '"+this.getNombre()+"','"+this.getTelefono()+"')");
+          sentencia.execute("insert into Personas values('"+this.getApellidos()+"', '"+this.getNombre()+"','"+this.getTelefono()+"')");
         }
         catch(SQLException e)
         {
